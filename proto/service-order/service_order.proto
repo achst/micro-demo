@@ -1,0 +1,27 @@
+
+syntax = "proto3";
+
+
+service OrderService {
+	rpc GetOrders(GetOrdersRequest) returns (GetOrdersResponse) {}
+}
+
+message GetOrdersRequest {
+    int32 page_index = 1;
+    int32 page_count = 2;
+}
+
+message GetOrdersResponse {
+	repeated Order orders = 1;
+}
+
+
+message Order {
+    uint64 id = 1;
+    string code = 2;
+    uint64 user_id = 3;
+    string title = 4;
+    int64 price = 5;
+    string create_time = 6;
+    string update_time = 7;
+}

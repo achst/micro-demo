@@ -1,0 +1,34 @@
+
+
+return json
+    code: 0   // code  0 success，< 0 server errors, > 0 common errors
+    msg: ''   // error message
+    data: {}  // data
+
+
+------------------------------------------------------------------------------------
+Summary
+------------------------------------------------------------------------------------
+
+Get Order List: /order/list
+
+------------------------------------------------------------------------------------
+
+Get Order List: /order/list
+GET:
+    page_index:
+    page_count:
+
+RETURN:
+    code: 0,
+    msg: '',
+    data:
+    {
+        id: 0, order id
+        code: '', order code
+        user_id: 0, order owner id
+        title: '', order title
+        price: 0, order price
+        create_time: ''
+        update_time: ''
+    }
