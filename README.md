@@ -6,28 +6,28 @@ A go-micro demo
 
 * run consul
 
-consul agent -dev
+    consul agent -dev
 
 * run micro api
 
-micro api --handler=proxy
+    micro api --handler=proxy
 
 * run api-gateway with conf
 
-go run main.go api_gateway.conf
+    go run main.go api_gateway.conf
 
 * run service-order
 
-go run main.go
+    go run main.go
 
 * look in browser
 
-http://localhost:8080/api/order/list
+    http://localhost:8080/api/order/list
 
 * run micro web
 
-micro web
+    micro web
 
 * look in browser
 
-http://localhost:8082
+    http://localhost:8082
